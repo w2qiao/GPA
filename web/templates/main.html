@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>绩点查询</title>
+</head>
+<body>
+	{% if error %}
+		<p style="color: red;">请输入账号密码</p>
+	{% endif %}
+	<h3>绩点自助查询</h3>
+	<p>输入教务处账号密码，查询绩点</p>
+    <form action="/result/" method="post">
+        账号：<input type="text" name="user" placeholder="请输入账号(即学号)"><br/>
+        密码：<input type="password" name="password" placeholder="请输入密码"><br/>
+        <input type="submit" value="查询">
+    </form>
+</body>
+</html>
